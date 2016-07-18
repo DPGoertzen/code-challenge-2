@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="challengeApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Code Challenge 2</title>
+    <script src="vendors/angular/angular.min.js" charset="utf-8"></script>
+    <script src="scripts/client.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/styles.css" charset="utf-8">
+  </head>
+  <body ng-controller="ChallengeController">
+    <div class="container">
+        <button ng-click="getStudents()">Display!</button>
+    </div>
+
+    <div class="wrapper">
+      <ol>
+        <li ng-repeat="student in studentList">{{student}}</li>
+      </ol>
+    </div>
+
+  </body>
+</html>
